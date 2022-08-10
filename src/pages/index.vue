@@ -3,7 +3,7 @@
         <h1>
             My nuxt website
         </h1>
-        <ul>
+        <ul v-if="data">
             <li v-for="(item, index) in data"
                 :key="index"
             >
@@ -20,6 +20,5 @@
     import { Strapi4RequestParams } from '@nuxtjs/strapi/dist/runtime/types/v4';
 
     const { find } = useStrapi4();
-    const params: Strapi4RequestParams = {};
-    const { data }: any = await find<Strapi4Response<any>>('pages', params);
+    const { data }: any = await find<Strapi4Response<any>>('pages');
 </script>
