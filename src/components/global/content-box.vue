@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            {{ data.title }}
+            {{ data?.title }}
         </h1>
 
         <div v-html="data.content" />

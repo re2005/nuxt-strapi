@@ -2,12 +2,12 @@
     <div>
         <div class="flex justify-between">
             <h1>
-                {{ data.title }}
+                {{ data?.title }}
             </h1>
             <figure>
                 <img
-                    :alt="data.title"
-                    :src="data.image.data?.attributes.url"
+                    :alt="data?.title"
+                    :src="data?.image.data?.attributes.url"
                 />
             </figure>
         </div>

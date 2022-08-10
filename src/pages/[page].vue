@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div v-if="pageData">
         <h1>
-            {{ pageData.title }}
+            {{ pageData?.title }}
         </h1>
 
         <div v-html="pageData.content" />
