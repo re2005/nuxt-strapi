@@ -8,14 +8,12 @@
             class="mt-4"
             v-html="pageData.content"
         />
-
-        <div class="mt-10 flex gap-20 flex-col">
-            <template
+        <div class="mt-40 flex gap-36 flex-col">
+            <component
+                :is="item.__component.replace('ui-elements.', '')"
                 v-for="(item, index) in pageData.components"
-                :key="index"
-            >
-                <component :is="item.__component.replace('ui-elements.', '')" :data="item" />
-            </template>
+                :key="index" :data="item"
+            />
         </div>
     </div>
     <div v-else>
@@ -26,6 +24,7 @@
     import { Strapi4Response } from '@nuxtjs/strapi/dist/runtime/types';
     import { Strapi4RequestParams } from '@nuxtjs/strapi/dist/runtime/types/v4';
     import { useRoute } from '#app';
+
     const route = useRoute();
 
     const { find } = useStrapi4();
