@@ -1,0 +1,50 @@
+$background: rgb(34, 36, 41);
+$gray: #141619;
+$gray-light: #2c2f36;
+$gray-lighter: #40444f;
+$purple: #84aaff;
+
+$red: #fd4040;
+$red-light: #ff7c91;
+$red-dark: #270710;
+$brown: #542432;
+$blue: #4d8fea;
+$blue-dark: #222429;
+$yellow: #e3a507;
+$green: #61cf8d;
+$green-dark: #108144;
+
+// From legacy colors not used
+$red2: #f82d3a;
+$red3: #d60000;
+$red4: #ff017a;
+$red5: #ff007a;
+$green1: #27ae60;
+$green2: #8aeda0;
+$yellow2: #ff8f00;
+$yellow3: #f3b71e;
+$yellow4: #d4af8a;
+$blue2: #5199ff;
+$blue3: #0f709f;
+$blue4: #84aaff;
+$blue5: #8ae1ff;
+$error: #fd4040;
+$success: #27ae60;
+$warning: #ff8f00;
+
+:root {
+    --gel-color-background: #{$background};
+    --gel-color-blue: #{$blue};
+    --gel-color-blue-dark: #{$blue-dark};
+    --gel-color-gray: #{$gray};
+    --gel-color-gray-light: #{$gray-light};
+    --gel-color-gray-lighter: #{$gray-lighter};
+    --gel-color-purple: #{$purple};
+    --gel-color-brown: #{$brown};
+    --gel-color-red: #{$red};
+    --gel-color-red-dark: #{$red-dark};
+    --gel-color-red-light: #{$red-light};
+    --gel-color-green: #{$green};
+    --gel-color-green-dark: #{$green-dark};
+    --gel-color-yellow: #{$yellow};
+}

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>Ethereum</title>
+    <path d="M15.9995 30.1234L7.33276 17.9258L15.9995 23.0616V30.1234Z" fill="currentColor"></path>
+    <path opacity="0.8" d="M15.9995 12.3086L7.33276 16.321L15.9995 21.4568V12.3086Z" fill="currentColor"></path>
+    <path opacity="0.6" d="M24.6665 16.321L15.9998 12.3086V21.4568L24.6665 16.321Z" fill="currentColor"></path>
+    <path opacity="0.85" d="M15.9998 1.87695L24.6665 16.3216L15.9998 12.3092V1.87695Z" fill="currentColor"></path>
+    <path d="M15.9998 1.87695L7.33299 16.3216L15.9998 12.3092V1.87695Z" fill="currentColor"></path>
+    <path opacity="0.85" d="M15.9998 23.0616L24.6665 17.9258L15.9998 30.1234V23.0616Z" fill="currentColor"></path>
+</svg>
