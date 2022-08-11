@@ -2,6 +2,14 @@ import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
     srcDir: 'src/',
+    app: {
+        head: {
+            htmlAttrs: {
+                class: 'dark',
+            },
+            title: 'Gelato',
+        },
+    },
     modules: [
         '@nuxtjs/strapi',
     ],
