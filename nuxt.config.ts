@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt';
 export default defineNuxtConfig({
     srcDir: 'src/',
     modules: [
-        ['@nuxtjs/strapi'],
+        '@nuxtjs/strapi',
     ],
     strapi: {
         url: process.env.STRAPI_URL || 'http://localhost:1337',

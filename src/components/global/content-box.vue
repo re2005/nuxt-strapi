@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>
+        <h3 class="text-3xl">
             {{ data?.title }}
-        </h1>
+        </h3>
 
         <div v-html="data.content" />
     </div>

@@ -4,16 +4,21 @@
             {{ pageData?.title }}
         </h1>
 
-        <div v-html="pageData.content" />
-        <template
-            v-for="(item, index) in pageData.components"
-            :key="index"
-        >
-            <div
+        <div
+            class="mt-14"
+            v-html="pageData.content"
+        />
+        <div class="flex gap-20 flex-col">
+            <template
+                v-for="(item, index) in pageData.components"
+                :key="index"
             >
                 <component :is="item.__component.replace('ui-elements.', '')" :data="item" />
-            </div>
-        </template>
+            </template>
+        </div>
+    </div>
+    <div v-else>
+        Page not found
     </div>
 </template>
 <script lang="ts" setup>
@@ -27,9 +32,9 @@
             slug: 'my-first-page',
         },
     };
-    const { data }: any = await find<Strapi4Response<any>>('pages', params);
-
     let pageData = null;
+
+    const { data }: any = await find<Strapi4Response<any>>('pages', params);
     if (data[0]) {
         pageData = data[0].attributes;
     }
