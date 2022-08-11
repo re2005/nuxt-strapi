@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ul v-if="data">
+        <ul v-if="data" class="flex flex-col gap-4">
             <li v-for="(item, index) in data"
                 :key="index"
                 class="underline text-gel-purple"
