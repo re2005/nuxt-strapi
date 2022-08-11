@@ -25,12 +25,14 @@
 <script lang="ts" setup>
     import { Strapi4Response } from '@nuxtjs/strapi/dist/runtime/types';
     import { Strapi4RequestParams } from '@nuxtjs/strapi/dist/runtime/types/v4';
+    import { useRoute } from '#app';
+    const route = useRoute();
 
     const { find } = useStrapi4();
     const params: Strapi4RequestParams = {
         populate: ['components.image'],
         filters: {
-            slug: 'my-first-page',
+            slug: route.params.page,
         },
     };
     let pageData = null;
