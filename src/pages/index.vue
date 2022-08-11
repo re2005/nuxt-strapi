@@ -9,7 +9,6 @@
                     {{ item.attributes.title }}
                 </nuxt-link>
             </li>
-
         </ul>
     </div>
 </template>

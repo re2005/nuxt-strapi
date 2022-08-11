@@ -40,46 +40,46 @@
 
 
 .gel-box {
-    @layer rounded-3xl bg-gray-100 dark:bg-gel-gray p-4 md:px-10 lg:py-8 shadow;
+    @apply rounded-3xl bg-gray-100 dark:bg-gel-gray p-4 md:px-10 lg:py-8 shadow;
 
     &._secondary {
-        @layer gel-default-bg;
+        @apply gel-default-bg;
     }
 
     .is-loading & {
         opacity: 0.5;
-        @layer blur-sm pointer-events-none;
+        @apply blur-sm pointer-events-none;
     }
 }
 
 .gel-symbol {
-    @layer border border-gel-gray-light px-4 py-2 lg:px-6 lg:py-3 block font-bold rounded-2xl;
+    @apply border border-gel-gray-light px-4 py-2 lg:px-6 lg:py-3 block font-bold rounded-2xl;
 }
 
 .gel-btn-blue {
-    @layer bg-gray-200 dark:bg-blue-500 px-6 py-4 rounded-2xl min-w-[180px] disabled:cursor-not-allowed disabled:opacity-50 dark:shadow-lg hover:opacity-80;
+    @apply bg-gray-200 dark:bg-blue-500 px-6 py-4 rounded-2xl min-w-[180px] disabled:cursor-not-allowed disabled:opacity-50 dark:shadow-lg hover:opacity-80;
 }
 
 .gel-btn {
-    @layer hover:opacity-80 md:min-w-[120px] flex-shrink-0 px-6 py-3 text-white bg-gel-gray-light rounded-2xl transition-colors outline-0 disabled:cursor-not-allowed;
+    @apply hover:opacity-80 md:min-w-[120px] flex-shrink-0 px-6 py-3 text-white bg-gel-gray-light rounded-2xl transition-colors outline-0 disabled:cursor-not-allowed;
 
     &._small {
-        @layer text-xs px-4 py-3 rounded-xl min-w-max;
+        @apply text-xs px-4 py-3 rounded-xl min-w-max;
     }
 
     &._red {
-        @layer bg-gel-red;
+        @apply bg-gel-red;
     }
 
     &._blue {
-        @layer bg-gel-blue;
+        @apply bg-gel-blue;
     }
 
     &._dark {
-        @layer bg-gel-gray;
+        @apply bg-gel-gray;
     }
 
     &._gray {
-        @layer bg-gel-gray-lighter;
+        @apply bg-gel-gray-lighter;
     }
 }

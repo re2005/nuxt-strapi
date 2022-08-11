@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="gel-box">
         <h3 class="text-3xl">
             {{ data?.title }}
         </h3>

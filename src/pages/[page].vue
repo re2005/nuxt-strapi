@@ -5,10 +5,11 @@
         </h1>
 
         <div
-            class="mt-14"
+            class="mt-4"
             v-html="pageData.content"
         />
-        <div class="flex gap-20 flex-col">
+
+        <div class="mt-10 flex gap-20 flex-col">
             <template
                 v-for="(item, index) in pageData.components"
                 :key="index"
