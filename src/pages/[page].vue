@@ -29,7 +29,7 @@
 
     const { find } = useStrapi4();
     const params: Strapi4RequestParams = {
-        populate: ['components.image'],
+        populate: ['deep'],
         filters: {
             slug: route.params.page,
         },
