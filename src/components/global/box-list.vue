@@ -10,7 +10,7 @@
                     <li
                         v-for="(tag, index) in item.tags"
                         :key="index"
-                        class="border border-white rounded-3xl px-4 py-2"
+                        class="border border-white rounded-3xl px-5 py-3 shrink-0"
                     >
                         {{ tag }}
                     </li>
@@ -18,10 +18,16 @@
                 <p class="font-bold text-xl">
                     {{ item.title }}
                 </p>
-                <div
-                    v-if="item.description"
-                    v-html="item?.description"
-                />
+
+                <ul class="flex items-center">
+                    <li
+                        v-for="logo in item.logos.data"
+                        :key="logo.id"
+                        class="-ml-4"
+                    >
+                        <img :src="logo.attributes.url" />
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>

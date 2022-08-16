@@ -1,11 +1,11 @@
 <template>
     <div v-if="pageData">
-        <h1>
+        <h1 class="text-7xl font-black">
             {{ pageData?.title }}
         </h1>
 
         <div
-            class="mt-4"
+            class="mt-4 text-3xl"
             v-html="pageData.content"
         />
         <div class="mt-40 flex gap-36 flex-col">
